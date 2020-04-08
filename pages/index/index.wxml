@@ -1,0 +1,87 @@
+<view>
+  <view class="cu-card article">
+    <view class="cu-item shadow-blur">
+      <view class="bg-brown padding radius text-center shadow">
+        <view class="bg-black padding radius text-center shadow-blur">
+          <view class="title">
+            <view class="text-cut">
+              最新公告
+            </view>
+          </view>
+          <view class="content">
+            <view class="text-content text-left">正文</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- <view class="icon-check lg text-gray">测试</view> -->
+  <!-- <button class="cu-btn bg-grey lg">玄灰</button>
+  <button class="cu-btn bg-red margin-tb-sm lg">嫣红</button> -->
+  <view class="cu-list grid col-3 no-border">
+    <view class="cu-item">
+      <view>
+        <image src="/image/index/classroom.png" style="width:30px;height:30px;" />
+        <view class="cu-tag badge">20</view>
+      </view>
+      <text>申请教室</text>
+    </view>
+    <view class="cu-item">
+      <!-- <view class="icon-clothesfill text-blue">
+        <view class="cu-tag badge">20</view>
+      </view> -->
+      <view>
+        <image src="/image/index/return.png" style="width:30px;height:30px;" />
+        <view class="cu-tag badge">20</view>
+      </view>
+      <text>归还课室</text>
+    </view>
+    <view class="cu-item">
+      <view>
+        <image src="/image/index/message.png" style="width:30px;height:30px;" />
+        <view class="cu-tag badge">20</view>
+      </view>
+      <text>查看结果</text>
+    </view>
+  </view>
+  <!-- 历史申请 -->
+  <view class="list-history">
+    <view class="list-history-title justify-between">
+      <view class="padding-sm margin-xs">历史申请</view>
+      <view class="padding-sm margin-xs">查看更多></view>
+    </view>
+    <view class="h-item radio">
+      <view class="pic flex-sub">
+        <image src="/image/index/history.png" style="width:50px;height:50px;" />
+      </view>
+      <view class="class-info flex-treble padding-sm margin-xs">
+        <view class="c-name">课室：C301</view>
+        <view class="c-desc">时间：9:00-10:20</view>
+        <view class="c-desc">用途：开班会</view>
+      </view>
+      <view class="c-more flex-twice padding-sm margin-xs text-right">查看详细></view>
+    </view>
+    <view class="h-item">
+      <view class="pic flex-sub">
+        <image src="/image/index/history.png" style="width:50px;height:50px;" />
+      </view>
+      <view class="class-info flex-treble padding-sm margin-xs">
+        <view class="c-name">课室：C301</view>
+        <view class="c-desc">时间：9:00-10:20</view>
+        <view class="c-desc">用途：开班会</view>
+      </view>
+      <view class="c-more flex-twice padding-sm margin-xs text-right">查看详细></view>
+    </view>
+    <view class="h-item">
+      <view class="pic flex-sub">
+        <image src="/image/index/history.png" style="width:50px;height:50px;" />
+      </view>
+      <view class="class-info flex-treble padding-sm margin-xs">
+        <view class="c-name">课室：C301</view>
+        <view class="c-desc">时间：9:00-10:20</view>
+        <view class="c-desc">用途：开班会</view>
+      </view>
+      <view class="c-more flex-twice padding-sm margin-xs text-right">查看详细></view>
+    </view>
+  </view>
+</view>

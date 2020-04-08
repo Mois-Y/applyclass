@@ -1,0 +1,63 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+.tsize{
+  font-size: 80px;
+}
+.usermotto {
+  margin-top: 200px;
+}
+.padding {
+  padding: 20rpx;
+}
+
+.list-history{
+  margin-top: 10px;
+}
+.list-history-title{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90rpx;
+  background: #fff;
+}
+.h-item{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #fff;
+}
+.pic image{
+  width: 80px;
+  height: 100px;
+  padding: 10px;
+}
+.class-info{
+  font-size: 11px;
+  padding-top: 5px;
+  line-height: 10px;
+}
+.c-name{
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+.c-desc{
+  color:#555555;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
