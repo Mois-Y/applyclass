@@ -1,0 +1,139 @@
+<view>
+  <view class="cu-card article">
+    <view class="cu-item shadow-blur">
+      <view class="bg-brown padding radius text-center shadow">
+        <view class="bg-black padding radius text-center shadow-blur">
+          <view class="title">
+            <view class="text-cut">
+              最新公告
+            </view>
+          </view>
+          <view class="content">
+            <view class="text-content text-left">正文</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+ 
+  <view class="cu-list grid col-3 no-border">
+   <view class="cu-item text-center" bindtap="showModal" data-target="bottomModal"> 
+      <view>
+        <image src="/image/index/classroom.png" style="width:30px;height:30px;" />
+        <view class="cu-tag badge">20</view>
+      </view>
+      <text>申请教室</text>
+    </view>
+    <view class="cu-item">
+      <!-- <view class="icon-clothesfill text-blue">
+        <view class="cu-tag badge">20</view>
+      </view> -->
+      <view>
+        <image src="/image/index/return.png" style="width:30px;height:30px;" />
+        <view class="cu-tag badge">20</view>
+      </view>
+      <text>归还课室</text>
+    </view>
+    <view class="cu-item">
+      <view bindtap="toReadResult">
+        <image src="/image/index/message.png" style="width:30px;height:30px;" />
+        <view class="cu-tag badge">20</view>
+      </view>
+      <text >查看结果</text>
+    </view>
+  </view>
+  <!-- 注意事项弹窗(不可以直接放在上面3列cu-list里面) --> 
+<view class="cu-modal bottom-modal page {{modalName=='bottomModal'?'show':''}}"> 
+  <view class="cu-dialog"> 
+    
+    <view class="padding-xl"> 
+    <view class="text-black text-bold"> 
+      教室使用注意事项 
+      </view> 
+<view class="text-left padding-top padding-left">《教室使用注意事项》的内容，原则上可以概括为：</view> 
+<view>规范、安全、节约、责任和处罚。具体内容如下：</view> 
+<view class="text-left padding-top">规范：</view> 
+<view class="text-left"> 
+<view>1、学习《申请单填写模板》正确填单；学习《申请流程》了解整个过程；学习《使用注意事项》做到使用时规范、安全和节约；学习《教室管理规定》了解相关制度。</view> 
+<view>2、申请人须参与该活动。</view> 
+<view>3、须凭回执使用教室。</view> 
+<view>4、具体使用须与申请用途一致。</view> 
+<view>5、禁止带食品进入教室和开各种派对。</view> 
+<view>6、禁止一切破坏教学环境的行为，例如：粘贴、乱涂乱刻。</view> 
+<view>7、周一至周五申请时间为9：00-22：00，周六日为9：00-18：00。</view> 
+<view>8、移动桌椅的课室使用后，须按要求将桌椅摆放整齐。</view> 
+</view> 
+<view class="text-left padding-top">安全：</view> 
+<view class="text-left"> 
+<view>须按申请时间准时到达教室； 
+禁止拆卸教学设备和连接自带的设备，如有特殊需要请向教保处申请，由教保处处理； 
+使用完教室须关闭设备电源、锁好门窗。</view> 
+</view> 
+<view class="text-left padding-top">节约：</view> 
+ <view class="text-left"> 
+ <view>时间：尽量开短会，时间控制在100分钟以内，超出100分钟，须详细说明原因； 
+空间：按实际到会的人数填写申请单； 
+设备：不用的设备不开，须用的设备用完及时关闭。</view> 
+</view> 
+<view class="text-left padding-top">责任：</view> 
+<view class="text-left"> 
+<view>审核者须审核申请用途、人数、填写是否属实和正确。</view> 
+</view> 
+<view class="text-left padding-top">处罚：</view> 
+<view class="text-left"> 
+<view>第一次违规禁止使用一个月，第二次违规禁止使用两个月，第三次违规禁止使用一学期。</view> 
+</view> 
+<view class="text-right padding">教学保障处</view> 
+<view class="text-right padding-right">二0一七年四月</view> 
+    </view>  
+ 
+    <view class="cu-bar padding bg-white btn-group"> 
+    <button class="action text-blue cu-btn line-blue shadow text-bold round" bindtap="hideModal">取消</button>      
+     <button class="action text-green cu-btn line-green shadow text-bold round" bindtap="gotoPage">确定</button> 
+  </view> 
+ 
+  </view> 
+
+ 
+</view>
+  <!-- 历史申请 -->
+  <view class="list-history">
+    <view class="list-history-title justify-between">
+      <view class="padding-sm margin-xs">历史申请</view>
+      <view class="padding-sm margin-xs">查看更多></view>
+    </view>
+    <view class="h-item radio">
+      <view class="pic flex-sub">
+        <image src="/image/index/history.png" style="width:50px;height:50px;" />
+      </view>
+      <view class="class-info flex-treble padding-sm margin-xs">
+        <view class="c-name">课室：C301</view>
+        <view class="c-desc">时间：9:00-10:20</view>
+        <view class="c-desc">用途：开班会</view>
+      </view>
+      <view class="c-more flex-twice padding-sm margin-xs text-right">查看详细></view>
+    </view>
+    <view class="h-item">
+      <view class="pic flex-sub">
+        <image src="/image/index/history.png" style="width:50px;height:50px;" />
+      </view>
+      <view class="class-info flex-treble padding-sm margin-xs">
+        <view class="c-name">课室：C301</view>
+        <view class="c-desc">时间：9:00-10:20</view>
+        <view class="c-desc">用途：开班会</view>
+      </view>
+      <view class="c-more flex-twice padding-sm margin-xs text-right">查看详细></view>
+    </view>
+    <view class="h-item">
+      <view class="pic flex-sub">
+        <image src="/image/index/history.png" style="width:50px;height:50px;" />
+      </view>
+      <view class="class-info flex-treble padding-sm margin-xs">
+        <view class="c-name">课室：C301</view>
+        <view class="c-desc">时间：9:00-10:20</view>
+        <view class="c-desc">用途：开班会</view>
+      </view>
+      <view class="c-more flex-twice padding-sm margin-xs text-right">查看详细></view>
+    </view>
+  </view>
+</view>

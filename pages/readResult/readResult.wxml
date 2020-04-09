@@ -1,0 +1,25 @@
+<!--pages/readResult/readResult.wxml-->
+<view class="cu-timeline">
+  <view class="cu-time">昨天</view>
+  <view class="cu-item cur icon-noticefill">
+    <view class="content bg-green shadow-blur">
+      <text>22:22</text> 您的请求已提交辅导员处理
+    </view>
+  </view>
+  <view class="cu-item text-red icon-attentionforbidfill">
+    <view class="content bg-red shadow-blur">
+     您的请求已提交系部老师处理
+    </view>
+  </view>
+  <view class="cu-item text-grey icon-evaluate_fill">
+    <view class="content bg-grey shadow-blur">
+      审批老师正在处理您的请求
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content">
+      <text>20:00</text> 您的请求已获得审批
+    </view>
+    
+  </view>
+</view>

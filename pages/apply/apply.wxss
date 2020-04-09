@@ -1,0 +1,70 @@
+/* pages/apply/apply.wxss */ 
+.cu-form-group .title { 
+  min-width: calc(4em + 30rpx); 
+} 
+ 
+.cu-form-group .cu-btn { 
+  width: fit-content; 
+} 
+ 
+.select_box{ 
+  width:45%; 
+  height:90%; 
+  text-align: right; 
+  border-radius: 14rpx; 
+  position: relative; 
+  z-index: 10; 
+} 
+.select_box .select{ 
+  box-sizing: border-box; 
+  width: 100%; 
+  height: 100%; 
+  border-radius: 8rpx; 
+  display: flex; 
+  align-items: center; 
+  padding: 0 10rpx; 
+} 
+.select_box .select .select_text{ 
+  font-size: 29rpx; 
+  color: black; 
+  line-height: 28rpx; 
+  flex: 1; 
+  text-align: center; 
+} 
+.select_box .select .select_img{ 
+  width: 40rpx; 
+  height: 40rpx; 
+  display: block; 
+  transition:transform 0.3s; 
+} 
+ 
+.select_box .option_box{ 
+  position: absolute; 
+  top: calc(100% - 1px); 
+  width: 100%; 
+  box-sizing: border-box; 
+  height: 1; 
+  overflow-y: auto; 
+  background: #FFFFFF; 
+  transition: height 0.3s; 
+  opacity: 1.0; 
+  z-index: 10; 
+} 
+.select_box .option_box .option{ 
+  display: block; 
+  line-height: 30rpx;  
+  font-size: 26rpx; 
+  border-top: 1px solid #efefef; 
+  border-bottom: 1px solid #efefef; 
+  padding: 10rpx; 
+  font-style: normal; 
+  z-index: 10; 
+  text-align: left; 
+} 
+.cu-form-group{ 
+  z-index: 0; 
+} 
+ 
+.picker{ 
+  font-size: 29rpx; 
+}

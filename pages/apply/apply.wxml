@@ -1,0 +1,102 @@
+<page> 
+    <!-- 申请表格 --> 
+    <form> 
+ 
+        <!-- 第一框内容 --> 
+        <view class="cu-form-group"> 
+            <view class="title">申请人</view> 
+            <input class="input" name="user" placeholder="请输入您的姓名" type="text" bindinput="inputName" /> 
+        </view> 
+ 
+        <view class="cu-form-group"> 
+            <view class="title">申请单位</view> 
+            <input class="input" name="unit" placeholder="请输入申请单位" type="text" bindinput="inputUnit" /> 
+        </view> 
+ 
+        <view class="cu-form-group"> 
+            <view class="title">联系电话</view> 
+            <input class="input" name="phone" placeholder="请输入您的手机号码" type="number" bindinput="inputPhone"></input> 
+            <view class="cu-capsule radius"> 
+                <view class="cu-tag bg-blue"> 
+                    +86 
+                </view> 
+                <view class="cu-tag line-blue"> 
+                    中国大陆 
+                </view> 
+            </view> 
+        </view> 
+ 
+ 
+        <!-- 第二框内容 --> 
+        <view class="cu-form-group margin-top"> 
+            <view class="title">开始时间</view> 
+            <picker mode="time" name="time1" value="{{time1}}" start="09:00" end="21:30" bindchange="TimeChange1"> 
+                <view class="picker"> 
+                    {{time1}} 
+                </view> 
+            </picker> 
+        </view> 
+ 
+        <view class="cu-form-group"> 
+            <view class="title">结束时间</view> 
+            <picker mode="time" name="time2" value="{{time2}}" start="09:10" end="22:00" bindchange="TimeChange2"> 
+                <view class="picker"> 
+                    {{time2}} 
+                </view> 
+            </picker> 
+        </view> 
+ 
+        <view class="cu-form-group"> 
+            <view class="title">使用日期</view> 
+            <picker mode="date" name="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange"> 
+                <view class="picker"> 
+                    {{date}} 
+                </view> 
+            </picker> 
+        </view> 
+ 
+        <view class="cu-form-group"> 
+            <view class="title">参与人数</view> 
+            <view class='select_box'> 
+                <view class='select' catchtap='selectTap'> 
+                    <text class='select_text'>{{selectData[index]}}</text> 
+                    <text class="icon-unfold lg text-gray"></text> 
+                </view> 
+                <view class='option_box' style='height:{{selectShow?(selectData.length>5?325:selectData.length*50):0}}rpx;'> 
+                    <text class='option' wx:for='{{selectData}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text> 
+                </view> 
+            </view> 
+        </view> 
+ 
+ 
+<view class="cu-form-group"> 
+            <view class="title">收表老师</view> 
+        <picker mode="multiSelector" bindchange="bindCustomPickerChange" bindcolumnchange="bindCustomPickerColumnChange" value="{{customIndex}}" range="{{onlyArray}}"> 
+            <view  class="picker"> 
+                {{onlyArray[0][customIndex[0]]}} {{onlyArray[1][customIndex[1]]}} {{onlyArray[2][customIndex[2]]}} 
+            </view> 
+        </picker> 
+</view> 
+ 
+        <view class="cu-form-group"> 
+            <view class="title">是否需要多媒体设备</view> 
+            <view>{{switchChecked}}</view> 
+            <switch checked value="{{switchChecked}}" bindchange="switchChange" type='switch' name='switch'></switch> 
+        </view> 
+ 
+        <view class="cu-form-group margin-top"> 
+            <view class="title">申请事由</view> 
+            <textarea data-placeholder="请输入具体申请原因、教室用途" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class="placeholder" class="{{textareaAValue?'value':''}}" bindinput="textareaAInput" name="taA"></textarea> 
+        </view> 
+ 
+        <view class="cu-form-group"> 
+            <view class="title">备注信息</view> 
+            <textarea data-placeholder="有什么特殊需求吗？" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class="placeholder" class="{{textareaBValue?'value':''}}" bindinput="textareaBInput" name="taB"></textarea> 
+        </view> 
+ 
+        <view class="cu-bar btn-group margin-top"> 
+            <button class="cu-btn bg-green shadow-blur round lg" bindtap="submit" value="submit" name="submit">提交</button> 
+        </view> 
+ 
+    </form> 
+</page>

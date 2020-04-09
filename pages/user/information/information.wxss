@@ -1,0 +1,12 @@
+/* pages/user/information/information.wxss */
+.cu-form-group{
+  margin-top: 16rpx;
+  margin-bottom: 12rpx;
+}
+.input{
+  /* text-align: right; */
+}
+.button{
+  margin: 30rpx;
+  width: 600rpx;
+}

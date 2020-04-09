@@ -1,0 +1,13 @@
+/* pages/user/user.wxss */
+.UCenter-bg{
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  padding-top: 50rpx;
+  padding-bottom: 45rpx;
+  padding-left: 40rpx;
+}
+.text-xl{
+  display: flex;
+  flex-direction: row;
+}
